@@ -1,0 +1,3 @@
+# TicTacToe
+Basic tic tac toe game with kotlin language.
+this source code could be useful for beginners...
