@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@drawable/backgroundd">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aviny"
+        android:text="بازی دوز"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="@color/ColorBlackNote"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/bTak"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="136dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/iransansweb_medium"
+        android:text="حالت تک نفره"
+        android:textSize="25sp"
+        app:backgroundTint="@color/ColorBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/btn2p"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/iransansweb_medium"
+        android:text="حالت دو نفره"
+        android:textSize="25sp"
+        app:backgroundTint="@color/ColorBlue"
+        app:layout_constraintEnd_toEndOf="@+id/bTak"
+        app:layout_constraintStart_toStartOf="@+id/bTak"
+        app:layout_constraintTop_toBottomOf="@+id/bTak" />
+
+    <Button
+        android:id="@+id/btnEX"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/iransansweb_medium"
+        android:text="خروج"
+        android:textSize="25sp"
+        app:backgroundTint="@color/RedT"
+        app:layout_constraintEnd_toEndOf="@+id/btn2p"
+        app:layout_constraintStart_toStartOf="@+id/btn2p"
+        app:layout_constraintTop_toBottomOf="@+id/btn2p" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/aviny"
+        android:text="نسخه   ۱.۰"
+        android:textColor="#A4FFFFFF"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEX">
+
+
+        <RelativeLayout
+            android:id="@+id/standardBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
